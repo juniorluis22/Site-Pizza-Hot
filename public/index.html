@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pizza</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header id="inicio">
+        <div class="bar">
+            <img src="./IMG/logo.png" alt="">
+
+            <div>
+                <nav class="menu-nav">
+                    <ul>
+                        <div>
+                            <li><a href="#inicio">INÍCIO</a></li>
+
+                        </div>
+
+                    </ul>
+                    <ul>
+                        <div>
+                            <li><a href="#cardapio">CARDÁPIO</a></li>
+                        </div>
+
+                    </ul>
+                    <ul>
+                        <div>
+                            <li><a href="#sobre">SOBRE</a></li>
+                        </div>
+
+                    </ul>
+                    <ul>
+                        <div>
+                            <li><a href="#contato">CONTATO</a></li>
+                        </div>
+
+                    </ul>
+                </nav>
+            </div>
+
+
+        </div>
+
+        <div class="slider">
+
+            <div class="slider--width" style="width: calc(100vw * 4);">
+                <div class="slider--item" style="background-image: url(./IMG/slid1.png)"></div>
+                <div class="slider--item" style="background-image: url(./IMG/slid2.png)"></div>
+                <div class="slider--item" style="background-image: url(./IMG/slid3.png)"></div>
+                <div class="slider--item" style="background-image: url(./IMG/slid4.png)"></div>
+            </div>
+        </div>
+
+        <div class="menu-nav-open" id="menu-nav-open">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">INÍCIO</a></li>
+                    <li><a href="#cardapio">CARDÁPIO</a></li>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-closer">
+                ❌
+            </div>
+
+            
+
+        </div>
+
+        <div class="overlay-menu" id="overlay-menu"></div>
+
+        
+    </header>
+
+
+    <section id="cardapio">
+        <div class="models" >
+            <div class="pizza-item">
+                <a href="">
+                    <div class="pizza-item--img"><img src="" /></div>
+                    <div class="pizza-item--add">+</div>
+                </a>
+                <div class="pizza-item--price">R$ --</div>
+                <div class="pizza-item--name">--</div>
+                <div class="pizza-item--desc">--</div>
+            </div>
+            <div class="cart--item">
+                <img src="" />
+                <div class="cart--item-nome">--</div>
+                <div class="cart--item--qtarea">
+                    <button class="cart--item-qtmenos">-</button>
+                    <div class="cart--item--qt">1</div>
+                    <button class="cart--item-qtmais">+</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="menu">
+
+            <div class="menu-btn-open" id="menu-btn-open">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="50" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </div>
+
+
+            <div class="menu-openner"><span>0</span>🛒
+
+
+            </div>
+        </div>
+        <main>
+            <h1>Pizzas</h1>
+            <div class="pizza-area"></div>
+        </main>
+        <aside>
+            <div class="cart--area">
+                <div class="menu-closer">❌</div>
+                <h1>Suas Pizzas</h1>
+                <div class="cart"></div>
+                <div class="cart--details">
+                    <div class="cart--totalitem subtotal">
+                        <span>Subtotal</span>
+                        <span>R$ --</span>
+                    </div>
+                    <div class="cart--totalitem desconto">
+                        <span>Desconto (-10%)</span>
+                        <span>R$ --</span>
+                    </div>
+                    <div class="cart--totalitem total big">
+                        <span>Total</span>
+                        <span>R$ --</span>
+                    </div>
+                    <div class="cart--finalizar">Finalizar a compra</div>
+                </div>
+            </div>
+        </aside>
+        <div class="pizzaWindowArea">
+            <div class="pizzaWindowBody">
+                <div class="pizzaInfo--cancelMobileButton">Voltar</div>
+                <div class="pizzaBig">
+                    <img src="" />
+                </div>
+                <div class="pizzaInfo">
+                    <h1>--</h1>
+                    <div class="pizzaInfo--desc">--</div>
+                    <div class="pizzaInfo--sizearea">
+                        <div class="pizzaInfo--sector">Tamanho</div>
+                        <div class="pizzaInfo--sizes">
+                            <div data-key="0" class="pizzaInfo--size">PEQUENA <span>--</span></div>
+                            <div data-key="1" class="pizzaInfo--size">MÉDIO <span>--</span></div>
+                            <div data-key="2" class="pizzaInfo--size selected">GRANDE <span>--</span></div>
+                        </div>
+                    </div>
+                    <div class="pizzaInfo--pricearea">
+                        <div class="pizzaInfo--sector">Preço</div>
+                        <div class="pizzaInfo--price">
+                            <div class="pizzaInfo--actualPrice">R$ --</div>
+                            <div class="pizzaInfo--qtarea">
+                                <button class="pizzaInfo--qtmenos">-</button>
+                                <div class="pizzaInfo--qt">1</div>
+                                <button class="pizzaInfo--qtmais">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pizzaInfo--addButton">Adicionar ao carrinho</div>
+                    <div class="pizzaInfo--cancelButton">Cancelar</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="sobre">
+        <div class="about">
+            <div class="img-about">
+                <img src="./IMG/imgsobre2.png" alt="">
+            </div>
+
+            <div class="area-social-text">
+
+                <div class="txt-about">
+                    <h1>PIZZA HOT</h1>
+                    <p> Desfrute dos melhores sabores clássicos na Pizzaria Hot! </p>
+                    
+                    <p>Da irresistível quatro queijos à
+                        picante calabresa e à perfeita musarela, cada fatia é uma explosão de sabor. Venha se deliciar
+                        conosco! </p>
+                </div>
+
+                <div class="btn-social-about">
+                    <div class="btn-social-area"><a href="#" title="instagram"></a><img src="./IMG/instagram.png"
+                            alt=""></div>
+                    <div class="btn-social-area"><a href="#" title="facebook"></a><img src="./IMG/facebook.png" alt="">
+                    </div>
+                    <div class="btn-social-area"><a href="#" title="youtube"></a><img src="./IMG/youtube.png" alt="">
+                    </div>
+                    <div class="btn-social-area"> <a href="#" title="whatsapp"></a><img src="./IMG/whatsapp.png"
+                            alt=""></div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="footer-area">
+            <div class="footer-right">
+
+                <div class="address">
+                    <h3>Endereço</h3>
+
+                    <p>
+                        Rua Fictícia, 321
+                        Bairro Magalhães </br>
+
+                        Cidade Curitiba</br>
+                        Estado Inexistente</br>
+                        CEP: 12345-678</br>
+                    </p>
+
+                    <div class="btn-social">
+                        <div class="btn-social-area"><a href="#" title="instagram"></a><img src="./IMG/instagram.png"
+                                alt=""></div>
+                        <div class="btn-social-area"><a href="#" title="facebook"></a><img src="./IMG/facebook.png"
+                                alt=""></div>
+                        <div class="btn-social-area"><a href="#" title="youtube"></a><img src="./IMG/youtube.png"
+                                alt=""></div>
+                        <div class="btn-social-area"> <a href="#" title="whatsapp"></a><img src="./IMG/whatsapp.png"
+                                alt=""></div>
+                    </div>
+
+                    <span> &copy;Júnior Magalhães </span>
+                </div>
+            </div>
+
+            <div class="logo-footer">
+                <img src="./IMG/logo.png" alt="">
+            </div>
+
+            <div class="footer-left">
+
+
+                <div class="text-left-footer">
+                    <div class="links-footer-pizza">
+                        <h3>Links Diretos</h3>
+                        <a href="#" title="produtos">
+                            <p>Produtos</p>
+                        </a>
+                        <a href="#" title="promocoes">
+                            <p>Promoções</p>
+                        </a>
+                        <a href="#" title="sobre nos">
+                            <p>Sobre nós</p>
+                        </a>
+                        <a href="#" title="Fale conosco">
+                            <p>Fale Conosco</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+   
+    <script type="text/javascript" src="./JS/pizzas.js" defer></script>
+    <script type="text/javascript" src="./JS/script.js" defer></script>
+    
+</body>
+
+</html>

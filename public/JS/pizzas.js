@@ -1,0 +1,8 @@
+let pizzaJson = [
+    {id:1, name:'Mussarela', img:'./IMG/pizza.png', price:[10.20, 15.80, 20.19], sizes:['100g', '530g', '860g'], description:'Massa fina coberta com molho de tomate e queijo mussarela derretido, assada até ficar crocante.'},
+    {id:2, name:'Calabresa', img:'./IMG/pizza2.png', price:[9.50, 14.20, 18.00], sizes:['320g', '530g', '860g'], description:'Massa tradicional coberta com molho de tomate, queijo mussarela e fatias de linguiça calabresa defumada, assada até ficar dourada e deliciosamente aromática.'},
+    {id:3, name:'Quatro Queijos', img:'./IMG/pizza3.png', price:[10.10, 14.80, 17.45], sizes:['320g', '530g', '860g'], description:'Massa com molho de tomate coberta com mussarela, provolone, gorgonzola e parmesão.'},
+    {id:4, name:'Americana', img:'./IMG/pizza4.png', price:[10.45, 16.30, 19.77], sizes:['320g', '530g', '860g'], description:'Massa com molho de tomate, mussarela, pepperoni, pimentão verde, cebola e azeitonas pretas.'},
+    {id:5, name:'Moda da Casa', img:'./IMG/pizza6.png', price:[9.20, 13.60, 18.55], sizes:['320g', '530g', '860g'], description:'Combinação exclusiva de ingredientes selecionados pelo chef, como presunto, champignon, cebola, pimentão, azeitonas e ovos.'},
+    {id:6, name:'Chocolate', img:'./IMG/pizza7.png', price:[12.60, 18.30, 22.36], sizes:['320g', '530g', '860g'], description:'Massa coberta com chocolate derretido, acompanhada de morangos, bananas e outros complementos doces.'}
+];
